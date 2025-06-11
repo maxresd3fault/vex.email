@@ -1,0 +1,49 @@
+Vex Email Privacy Policy
+
+Last Updated: 2/25/2025
+
+Introduction:
+Welcome to Vex Email ("Vex," "vex.email," "we," "us," or "our"). Your privacy is
+important to us. This Privacy Policy outlines how we collect, use, store, and
+protect your personal information when you use our email services.
+
+Information We Collect:
+When you create an account with Vex Email, we collect the following personal
+information:
+
+* First and Last Name
+* Birthday
+* Phone Number
+* Alternate Email Address
+
+How We Use Your Information:
+The personal information you provide is used for the following purposes:
+
+* Account Recovery - To verify your identity in case you need to recover access
+to your account.
+* Account Verification - To help ensure accounts are created by real users and
+not automated bots.
+
+Data Storage and Security:
+By creating an account and submitting this information, you consent to it being
+securely stored on Vex Email servers. Your information is never shared, sold, or
+given to any third party. However, in certain cases, our support team may
+manually review your data for the purposes outlined above. User emails are never
+accessed by Vex or any third party.
+
+Account Deletion:
+At the user's request, accounts along with all personal data related to them can
+be deleted.
+
+Your Consent:
+By signing up for Vex Email, you acknowledge and agree that your personal
+information will be stored on our servers and may be reviewed manually by our
+support team if necessary for account verification or recovery.
+
+Changes to This Policy:
+We may update this Privacy Policy from time to time. Any changes will be posted
+on this page with an updated effective date.
+
+Contact Us:
+If you have any questions about this Privacy Policy, please contact us at:
+support@vex.email

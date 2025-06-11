@@ -1,0 +1,518 @@
+@font-face {
+	font-family: "tahoma-reg";
+	src: url('/fonts/Tahoma.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: "tahoma-bold";
+	src: url('/fonts/Tahoma-Bold.woff2') format('woff2');
+}
+
+/*--- LAYOUT BASICS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---*/
+* html body	{
+	text-align: center;
+}
+body	{
+	background: #5D5D5D url("/theme/body-bg.webp") top left repeat-x;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: tahoma-reg, sans-serif;
+	color: #EEEEEE;
+	text-align: center;
+	border-top: 1px;
+	border-style: solid;
+	border-color: #8A8A8A;
+}
+textarea {
+	background: linear-gradient(to bottom, #2F2F2F, #434343);
+	color: #EEE;
+	border-color: #5D5D5D;
+}
+#server-table-wrapper {
+	overflow: hidden;
+}
+#server-table-container {
+	width: fit-content;
+	float: left;
+}
+#server-table-wrapper table {
+	margin: 0 5px 10px 5px;
+}
+#server-table-wrapper td {
+	padding: 4px;
+}
+#server-table-wrapper table, #server-table-wrapper td {
+	border: 1px solid #8A8A8A;
+	border-collapse: collapse;
+}
+h1 {
+	padding: 6px 0 0 10px;
+	margin: 0;
+	border: 0;
+	height: 25px;
+	width: 358px;
+	width: 348px;
+	background:  url("/theme/h1bg.webp") top left no-repeat;
+	font-size: 11px;
+	font-family: tahoma-bold;
+	font-weight: normal;
+	text-transform: uppercase;
+	clear: left;
+}
+h2 {
+	padding: 6px 0 0 10px;
+	margin: 0;
+	border: 0;
+	height: 25px;
+	width: 292px;
+	background:  url("/theme/h2bg.webp") top left no-repeat;
+	font-size: 11px;
+	font-family: tahoma-bold;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+h6	{
+	margin: 0 15px 10px 15px;
+	padding: 0;
+	border: 0;
+	font-size: xx-small;
+	font-weight: normal;
+	color: #ACACAC;
+}
+h6 a:link,
+h6 a:active,
+h6 a:visited	{
+	color: #D4D4D4;
+	text-decoration: underline;
+}
+h6 a:hover {
+	color: #EEEEEE;
+}
+p	{
+	margin: 0 5px 10px 5px;
+	padding: 0;
+	border: 0;
+	font-size: x-small;
+	font-weight: normal;
+	color: #EEEEEE;
+}
+.pCase	{
+	margin: 0 5px 0 5px;
+	padding: 0;
+	border: 0;
+	font-size: x-small;
+	font-weight: normal;
+	color: #EEEEEE;
+}
+form	{
+	margin: 0 5px 10px 5px;
+}
+.submit	{
+	margin: 2px 0 0 3px;
+	padding: 0 5px 0 5px;
+	border: 1px solid #353535;
+	background:  url("/theme/small-button.webp") top left repeat-x;
+	height: 20px;
+	font-size: x-small;
+	font-weight: normal;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+/*--- WRAPPERS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---*/
+#wrapper {
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	width: 694px;	
+	text-align: center;
+}
+
+#baseDisp {
+	background:  url("/theme/base-bg.webp") top center repeat-y;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	width: 694px;
+	height: auto;
+	text-align: left;
+	overflow: hidden;
+}
+#textarea-wrapper {
+	width: 654px;
+	text-align: center;
+}
+/*--- NAVIGATION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---*/
+dl	{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	list-style-type: none;
+	font-size: 10px;
+}
+dl dd,
+.signup-btn {
+	margin: 5px 5px 0 5px;
+	padding: 0;
+	float: left;
+	text-align: center;
+	border: 1px solid #353535;
+	background: url("/theme/button.webp") top center repeat-x;
+	width: 100px;
+	height: 26px;
+	width: 98px;
+	height: 24px;
+}
+.signup-btn {
+	width: auto;
+	padding: 0 5px 0 5px;
+	margin: 6px 0 9px 3px;
+	cursor: pointer;
+}
+.signup-btn:disabled {
+	filter:brightness(80%);
+	cursor: default;
+}
+#output {
+	margin: 0 5px 0 5px;
+	font-weight: bold;
+}
+#output a {
+	color: #BFED46;
+}
+#output a:hover	{
+	color: #FFFFFF;
+}
+dl dd a:link,
+dl dd a:visited,
+dl dd a:active	{
+	padding: 6px 0 0 0;
+	margin: 0;
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+	width: 100px;
+	height: 26px;
+	width: 98px;
+	height: 18px
+}
+#navigation ul {
+	padding: 0;
+	margin: 0;
+	border: 0;	
+	list-style-type: none;
+	font-size: 11px;
+	font-family: tahoma-bold;
+}
+#navigation ul li {
+	padding: 0 20px 0 0;
+	margin: 0;
+	border: 0;
+	font-size: 11px;
+	vertical-align: bottom;
+	display: inline;
+	text-transform: uppercase;	
+}
+#navigation ul li a:link ,
+#navigation ul li a:active,
+#navigation ul li a:visited {
+	padding: 0 0 13px 0;
+	color: #FFFFFF;
+	text-decoration: none;	
+	cursor: pointer;
+}
+
+/*--- CENTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---*/
+#center,
+#center-welcome {
+	margin: 0 auto;
+	padding: 0;
+	border: 1px;
+	border-right: 0;
+	border-left: 0;
+	width: 668px;
+	height: 200px;
+	border-style: solid;
+	border-color: #8A8A8A;
+}
+#center-welcome {
+	display: flex;
+	align-items: center;
+}
+#center-welcome p {
+	font-size: xx-large;
+	text-shadow: 0 0 10px black;
+	margin-left: 58px;
+	font-family: tahoma-bold;
+	margin-bottom: 0px;
+}
+/*--- CONTENT MAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---*/
+#contMain {
+	margin: 0 20px 0 20px;
+	padding: 9px 0 9px 0;
+	border: 0;
+	width: 654px;
+	height: 100%;
+	font-size: x-small;
+	font-weight: normal;
+	color: #EEEEEE;
+	/*background: #5D5D5D url("/web/20060516232420im_/http://www.newezra.com/xhtml/assets/cssimg/contMainBg.gif") top left repeat-x;*/
+}
+/*--- LEFT COLUMN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---*/
+#leftColumn   {	
+	float: left;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	width: 358px;
+	text-align: left;
+}
+.leftColumnImg	{
+	margin: 0 5px 5px 5px;
+	padding: 0;
+	float: left;
+	border: 5px solid #484848;
+}
+.leftImg	{
+	margin: 0 5px 0 5px;
+	padding: 0;
+	float: left;
+	border: 5px solid #484848;
+}
+.csLeftImg	{
+	margin: 3px 2px 0 5px;
+	padding: 0;
+	float: left;
+	border: 2px solid #484848;
+}
+.rightImg	{
+	margin: 0 -13px 0 5px;
+	padding: 0;
+	float: right;
+	border: 5px solid #484848;
+}
+/*--- RIGHT COLUMN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---*/
+html>#rightColumn 	{
+	width: 292px;
+} 
+#rightColumn   {
+	padding: 0 0 0 5px;
+	margin: 0 0 0 358px;
+	background: transparent;
+	/* compensates for IE Win bungling */
+	height: 100%;
+	text-align: left;
+}
+#endClear {
+	clear: both;
+}
+/*--- CONTENT SPECIFIC ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---*/
+.dispBoxRight img	{
+	float: left;
+	margin-right: 5px;
+	
+}
+.dispBoxLeft img	{
+	float: left;
+	margin-right: 5px;
+	margin-top: 2px;
+	border: 0;
+}
+/*--- FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---*/
+#footer {
+	margin: 0 auto;
+	padding: 10px 0 0 0;
+	border: 0;
+	width: 694px;
+	background: url("/theme/footer-bg.webp") top center no-repeat;
+	text-align: left
+}
+#leftFoot   {	
+	float: left;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	width: 300px;
+	text-align: left;
+}
+#leftFoot img	{
+	margin: 2px 4px 0 15px;
+	padding: 0;
+	float: left;
+}
+#rightFoot   {
+	padding: 0;
+	margin: 0 0 0 300px;
+	text-align: right;
+}
+#homeBtns	{
+	margin: 0 0 0 135px;
+	padding: 0;
+}
+h5	{
+	display: inline;
+}
+h5 a:link	{
+	background: #33FFFF;
+	height: 50px;
+}
+
+/*
+GREEN = #BFED46
+
+/*--- LAYOUT BASICS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---*/
+h3	{
+	margin: 0 5px 0 5px;
+	padding: 0;
+	border: 0;
+	font-size: x-small;
+	font-weight: bold;
+	color: #BFED46;
+}
+h4	{
+	margin: 0 5px 0 5px;
+	padding: 0;
+	border: 0;
+	font-size: x-small;
+	font-weight: normal;
+	color: #BFED46;
+}
+p a:link,
+p a:active,
+p a:visited	{
+	color: #BFED46;
+	text-decoration: underline;
+}
+p a:hover	{
+	color: #FFFFFF;
+}
+input,
+select {
+	margin: 2px 3px 6px 3px;
+	padding: 2px 0 0 2px;
+	border: 1px solid #363636;
+	background:  url("/theme/input.webp") top left repeat-x;
+	height: 16px;
+	font-size: x-small;
+	font-weight: normal;
+	color: #FFF;
+	width: 170px;
+}
+select {
+	height: 20px;
+	width: 114px;
+}
+
+input.full-width {
+	width: 350px;
+}
+.newsletterInput	{
+	margin: 2px 0 6px 3px;
+	padding: 2px 0 0 2px;
+	border: 1px solid #363636;
+	background:  url("/theme/input.webp") top left repeat-x;
+	height: 16px;
+	font-size: x-small;
+	font-weight: normal;
+	color: #BFED46;
+	display: block;
+	width: 278px;
+}
+/*--- HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---*/
+#header {
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	width: 668px;
+	height: 95px;
+	background: #282828 url("/theme/logo.webp") top left no-repeat;
+	text-align: left;
+	font-size: 11px;
+}
+/*--- NAVIGATION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~---*/
+dl dd a:hover	{
+	color: #BFED46;
+}
+.signup-btn:not(:disabled):hover {
+	color: #BFED46;
+}
+dl dd:hover,
+.signup-btn:not(:disabled):hover {
+	filter:brightness(120%)
+}
+#navigation {
+	padding: 67px 0 0 0;
+	margin: 0;
+	height: 26px;
+	background:  url("/theme/nav-stripe.webp") bottom left no-repeat;
+	text-align: right;
+	font-size: 11px;	
+	cursor: default;
+}
+#navigation ul li a:hover {
+	padding: 0 0 13px 0;
+	color: #FFFFFF;
+	text-decoration: none;
+	background:  url("/theme/nav-hover.webp") bottom repeat-x;
+	cursor: pointer;
+}
+form {
+	margin: 0;
+}
+.input-row {
+	width: 361px;
+	overflow: hidden;
+}
+.form-control {
+	float: left;
+}
+#check_username_availability {
+	margin: 2px 0 0 0;
+	padding: 0 3px 0 3px;
+	border: 1px solid #353535;
+	background:  url("/theme/small-button.webp") top left repeat-x;
+	background-size: 100% 100%;
+	height: 20px;
+	font-size: x-small;
+	font-weight: normal;
+	color: #FFFFFF;
+	cursor: pointer;
+	width: 99px;
+}
+#check_username_availability:hover {
+	color: #BFED46;
+	filter:brightness(120%)
+}
+#username_availability_result {
+	overflow: hidden;
+	width: fit-content;
+	float: left;
+	margin-right: 3px;
+	height: 20px;
+	margin-top: 2px;
+}
+#blink-text-green {	
+	animation-name:blink-green;
+	animation-duration:0.125s;
+	animation-iteration-count:5;
+}
+#blink-text-green a {
+	color: inherit;
+	text-decoration: underline;
+}
+@keyframes blink-green {
+	0%{color: #BFED46;}
+	50%{color: white;}
+	100%{color: #BFED46;}
+}
+#blink-text-red {	
+	animation-name:blink-red;
+	animation-duration:0.125s;
+	animation-iteration-count:5;
+}
+@keyframes blink-red {
+	0%{color: #F00;}
+	50%{color: white;}
+	100%{color: #F00;}
+}

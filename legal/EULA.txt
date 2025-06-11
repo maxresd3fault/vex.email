@@ -1,0 +1,40 @@
+Vex Email End User License Agreement (EULA)
+
+Last Updated: 2/25/2025
+
+Introduction:
+This End User License Agreement ("EULA") is a legal agreement between you
+("User") and Vex Email ("Vex," "vex.email," "we," "us," or "our") governing your
+use of our email services. By creating an account and using Vex Email, you agree
+to abide by the terms outlined in this EULA.
+
+Terms of Use:
+
+No Alternate or Duplicate Accounts:
+Users are not permitted to create multiple accounts for the same individual. If
+it is detected that a user is creating duplicate accounts, they will be taken
+down without notice.
+
+Proper Use of Attachments:
+Attachments must be used for their intended purpose within email communication.
+Using attachments as a method of external file storage is prohibited.
+
+Prohibited Activities:
+Users must not engage in any illegal activity using Vex Email. Any accounts
+found participating in illegal activities will be terminated immediately.
+
+Account Activity Requirement:
+Your account must remain active. If an account shows no activity for an extended
+period, our support team may contact you. If no response is received, the
+account may be terminated due to inactivity.
+
+Enforcement:
+Failure to comply with these terms may result in account suspension or
+termination at Vex's sole discretion.
+
+Changes to This EULA:
+We reserve the right to modify this EULA at any time. Any changes will be posted
+on this page with an updated effective date.
+
+Contact UsIf you have any questions about this EULA, please contact us at:
+support@vex.email
