@@ -5,6 +5,41 @@
 		die('You are not allowed to execute this file directly');
 	}
 	
+	function generateKey() {
+		$characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+		$key = '';
+		for ($i = 0; $i < 8; $i++) {
+			$key .= $characters[random_int(0, strlen($characters) - 1)];
+		}
+		return $key;
+	}
+	
+	function formatWaitTimeMessage(DateInterval $diff, string $baseMessage): string {
+		$days = $diff->days;
+		$hours = $diff->h;
+		$minutes = $diff->i;
+		
+		if ($minutes > 30) {
+			$hours++;
+			if ($hours == 24) {
+				$days++;
+				$hours = 0;
+			}
+		}
+		
+		$timeParts = [];
+		if ($days > 0) {
+			$timeParts[] = $days . ' day' . ($days > 1 ? 's' : '');
+		}
+		if ($hours > 0) {
+			$timeParts[] = $hours . ' hour' . ($hours > 1 ? 's' : '');
+		}
+		
+		$timeString = implode(' and ', $timeParts);
+		
+		return '<span id="blink-text-red" style="color:#F00">' . $baseMessage . ' ' . $timeString . '.</span>';
+	}
+	
 	function ValidEmail($email) {
 		$es= filter_var($email, FILTER_SANITIZE_EMAIL);
 		return filter_var($es, FILTER_VALIDATE_EMAIL);

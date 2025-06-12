@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="robots" content="index, follow">
+		<meta name="viewport" content="width=900">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+		<link rel="stylesheet" href="/css/global.css"/>
+		<title>Vex Email - Keys</title>
+		<meta name="description" content="Vex Email change password.">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="baseDisp">
+				<script id="replace_with_navbar" src="/scripts/navbar.js"></script>
+				<script id="replace_with_main_banner" src="/scripts/main-banner.js"></script>
+				<div id="contMain">
+					<div id="leftColumn">
+						<form action="lib/key_process.php" id="msgSend" method="post" class="form" role="form" enctype="multipart/form-data">
+							<h1>Request Key</h1>
+							<div class="input-row">
+								<input type="email" class="full-width" name="useremail" placeholder="Enter your Vex Email" required>
+							</div>
+							<div class="input-row">
+								<input type="password" maxlength="18" class="full-width" name="pwd" placeholder="Enter your password" required>
+							</div>
+							<p style="margin-bottom:0">By clicking 'Request Key', a new Vex Email key will be emailed to you which you can share.</p>
+							<input name="submit" type="submit" class="signup-btn" id="msgButton" value="Request Key">
+						</form>
+					</div>
+					<div id="rightColumn">
+						<h2>Account Keys</h2> 
+						<p>On this page you can request a key for someone else to make a new Vex Email account. You may request a new key once per week. New accounts must also wait one week before they can request a key. You cannot make a second account for yourself using your own key as this is a violation of our <a target="_blank" href="/legal/EULA.txt">EULA</a>.</p>
+						<div id="output"></div>
+					</div>
+				</div>
+			</div>
+			<div id="endClear"></div>
+			<script id="replace_with_footer" src="/scripts/footer.js"></script>
+		</div>
+		<script src="assets/js/jquery.js"></script>
+		<script src="assets/js/jquery.form.js"></script>
+		<script src="assets/js/custom.js"></script>
+	</body>
+</html>

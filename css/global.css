@@ -387,6 +387,13 @@ p a:visited	{
 p a:hover	{
 	color: #FFFFFF;
 }
+.key-input {
+	margin-top: 6px;
+	height: 20px;
+	font-family: monospace;
+	font-size: 170%;
+	width: 84px;
+}
 input,
 select {
 	margin: 2px 3px 6px 3px;

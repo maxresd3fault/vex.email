@@ -13,7 +13,7 @@
 	$new = new MyCpanel();
 	$db=DB::getInstance();
 	
-	if($_POST) {
+	if ($_POST) {
 		$email = post('useremail');
 		$currentPassword = post('oldpwd');
 		$newPassword = post('newpwd');
@@ -29,20 +29,20 @@
 		if (!$row) {
 			die('<span id="blink-text-red" style="color:#F00">There is no Vex Email account with that name.</span>');
 		}
-		if($newPassword!=$newPassword2) {
+		if ($newPassword!=$newPassword2) {
 			die('<span id="blink-text-red" style="color:#F00">The passwords do not match!</span>');
 		}
-		if(!preg_match("/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).{8,18}$/", $newPassword)) {
+		if (!preg_match("/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).{8,18}$/", $newPassword)) {
 			die('<span id="blink-text-red" style="color:#F00">Your password must be 8–18 characters long and include uppercase, lowercase, a number, and a special symbol.</span>');
 		}
-		if($decrypted_pwd != $currentPassword) {
+		if ($decrypted_pwd != $currentPassword) {
 			die('<span id="blink-text-red" style="color:#F00">Incorrect password.</span>');
 		}
 		
 		$oldpass = $currentPassword;
 		$newpass = $newPassword;
 		
-		if($new->ChangeEmailPassword($email,$newpass) === true)
+		if ($new->ChangeEmailPassword($email,$newpass) === true)
 			{
 				//$new_pwd=base64_encode($newPassword);
 				$new_pwd = vexSecure('enc', $newPassword,ENCRYPT_KEY);

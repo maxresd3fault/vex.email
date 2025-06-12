@@ -41,4 +41,11 @@ function check_availability(){
 	
 }
 <!--number check-->
-jQuery('.numbersOnly').keyup(function () { this.value = this.value.replace(/[^0-9\.]/g,'');});
+jQuery('.numbersOnly').keyup(function () {
+	this.value = this.value.replace(/[^0-9\.]/g,'');
+});
+
+<!--key check-->
+jQuery('.key-input').keyup(function () {
+	this.value = this.value.toUpperCase().replace(/[^A-Z0-9]/g, '');
+});

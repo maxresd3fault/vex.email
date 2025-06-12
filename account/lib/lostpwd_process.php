@@ -10,17 +10,17 @@
 	include('dbconnect.php');
 	$db=DB::getInstance();
 	
-	if($_POST) {
+	if ($_POST) {
 		$email = post('email');
 		
-		if($email != "") {
+		if ($email != "") {
 			$sql = "SELECT COUNT(cemail) AS email from mailusers WHERE cemail =:cemail";
 			$stmt=$db->prepare($sql);
 			$stmt->bindParam(':cemail', $email);
 			$stmt->execute();
 			$row=$stmt->fetch(PDO::FETCH_OBJ);
 			
-			if($row->email > 0) {
+			if ($row->email > 0) {
 				$sql = "SELECT  * FROM  mailusers WHERE cemail = :cemail";
 				$stmt=$db->prepare($sql);
 				$stmt->bindParam(':cemail', $email);

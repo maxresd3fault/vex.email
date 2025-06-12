@@ -27,17 +27,17 @@
 						<form action="lib/process_reg.php" id="msgSend" method="post" class="form" role="form" enctype="multipart/form-data">
 							<h1>Vex Email Registration</h1>
 							<div class="input-row">
-								<input type="text" class="form-control" name="fname" id="fname" placeholder="First Name" required="">
-								<input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name" required="">
+								<input type="text" class="form-control" name="fname" id="fname" placeholder="First Name" required>
+								<input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name" required>
 							</div>
 							<div class="input-row">
-								<input name="username" type="text" class="form-control" id="username" maxlength="15" placeholder="Username" required="">
+								<input name="username" type="text" class="form-control" id="username" maxlength="15" placeholder="Username" required>
 								<div id="username_availability_result"><span style="font-family:tahoma-bold;font-size:125%;padding-left:3px">@vex.email</span></div>
 								<input type="button" id="check_username_availability" value="Check Availability" class="btn btn-success btn-sm">
 							</div>
 							<div class="input-row">
-								<input type="password" class="form-control" name="pwd" maxlength="18" id="pwd" placeholder="Enter Password" required="">
-								<input type="password" name="pwd2" maxlength="18" value="" class="form-control" placeholder="Confirm Password" required="">
+								<input type="password" class="form-control" name="pwd" maxlength="18" id="pwd" placeholder="Enter Password" required>
+								<input type="password" name="pwd2" maxlength="18" value="" class="form-control" placeholder="Confirm Password" required>
 							</div>
 							<p style="margin-bottom:0">Birth Date</p>
 							<div class="input-row">
@@ -52,17 +52,18 @@
 								</select>
 							</div>
 							<div class="input-row">
-								<input type="text" class="form-control numbersOnly" name="phone" id="phone" placeholder="Phone Number">
-								<input type="email" class="form-control" name="email" placeholder="Alternate Email" required="">
+								<input type="text" class="form-control numbersOnly" name="phone" id="phone" placeholder="Phone Number" required>
+								<input type="email" class="form-control" name="email" placeholder="Alternate Email" required>
 							</div>
 							<p style="margin-bottom:0">By clicking 'Create New Account', you agree to our <a href="/legal/EULA.txt" target="_blank">EULA</a> and <a href="/legal/Privacy.txt" target="_blank">Privacy Policy</a>.</p>
 							<input name="submit" type="submit" class="signup-btn" id="msgButton" value="Create New Account">
+							<input type="text" class="form-control key-input" maxlength="8" name="key" id="key" placeholder="Key" required>
 						</form>
 					</div>
 					<div id="rightColumn">
 						<h2>About Registration</h2> 
 						<p>Welcome to Vex Email! We're excited that you're choosing to create an account with us. With Vex Email, you get a simple, reliable, and free email service designed to meet your everyday needs. Every user receives a 1GB mailbox, ensuring plenty of space for your messages, and you can send attachments up to 128MB, perfect for sharing important files without hassle.</p>
-						<p>We’re committed to providing a seamless email experience without unnecessary complexity. Whether you're here for personal or professional use, we’re happy to have you on board. Sign up today and enjoy a clean, efficient, and secure email service built for you!</p>
+						<p>To sign up for Vex Email you need a key. You can get a key from a current account holder. Once you create an account you can issue and share your own keys. If you don't know anyone who has a Vex Email account don't worry! We occasionally post keys on our homepage.</p>
 						<div id="output"></div>
 					</div>
 				</div>
