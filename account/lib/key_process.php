@@ -30,7 +30,7 @@
 				die('<span id="blink-text-red" style="color:#F00">Incorrect password.</span>');
 			}
 			
-			$rdate = DateTime::createFromFormat('d/m/Y H:i', $row_user->rdate . ' 12:00');
+			$rdate = new DateTime($row_user->rdate);
 			$waitPeriod = new DateInterval('P7D');
 			$allowedDate = clone $rdate;
 			$allowedDate->add($waitPeriod);

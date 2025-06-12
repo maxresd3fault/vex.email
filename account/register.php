@@ -27,11 +27,11 @@
 						<form action="lib/process_reg.php" id="msgSend" method="post" class="form" role="form" enctype="multipart/form-data">
 							<h1>Vex Email Registration</h1>
 							<div class="input-row">
-								<input type="text" class="form-control" name="fname" id="fname" placeholder="First Name" required>
-								<input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name" required>
+								<input type="text" class="form-control" maxlength="50" name="fname" id="fname" placeholder="First Name" required>
+								<input type="text" class="form-control" maxlength="50" name="lname" id="lname" placeholder="Last Name" required>
 							</div>
 							<div class="input-row">
-								<input name="username" type="text" class="form-control" id="username" maxlength="15" placeholder="Username" required>
+								<input name="username" type="text" class="form-control" id="username" maxlength="64" placeholder="Username" required>
 								<div id="username_availability_result"><span style="font-family:tahoma-bold;font-size:125%;padding-left:3px">@vex.email</span></div>
 								<input type="button" id="check_username_availability" value="Check Availability" class="btn btn-success btn-sm">
 							</div>
@@ -52,7 +52,7 @@
 								</select>
 							</div>
 							<div class="input-row">
-								<input type="text" class="form-control numbersOnly" name="phone" id="phone" placeholder="Phone Number" required>
+								<input type="text" class="form-control numbersOnly" maxlength="15" name="phone" id="phone" placeholder="Phone Number" required>
 								<input type="email" class="form-control" name="email" placeholder="Alternate Email" required>
 							</div>
 							<p style="margin-bottom:0">By clicking 'Create New Account', you agree to our <a href="/legal/EULA.txt" target="_blank">EULA</a> and <a href="/legal/Privacy.txt" target="_blank">Privacy Policy</a>.</p>

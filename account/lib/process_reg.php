@@ -36,11 +36,11 @@
 		else {
 			$nday=$day;
 		}
-		$cbirthday=$nmonth.'/'.$nday.'/'.$year;
+		$cbirthday=$year.'-'.$nmonth.'-'.$nday;
 		
 		$cphone = post('phone');
 		$cemail = post('email');
-		$rdate = date('d/m/Y');
+		$rdate = (new DateTime())->format('Y-m-d H:i:s');
 		
 		$sql = "SELECT * FROM vexkeys WHERE keyvalue = :key AND valid = 1 AND usedby IS NULL LIMIT 1";
 		$stmt = $db->prepare($sql);
